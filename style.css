@@ -1,0 +1,137 @@
+body {
+    font-family: "Open Sans", serif;
+    margin: 200px 0px 0px 0px;
+    background: #CDE5D7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* .quote-box {
+    background-color: white;
+    justify-content: center;
+    color: black;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 4px;
+    position: relative;
+
+}
+
+.quote-box h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(24, 23, 23);
+    padding: 20px;
+    position: absolute;
+    right: 15px;
+    margin:  50px;
+}
+
+.quote {
+    font-size: 2rem;
+    background-color: rgb(41, 41, 153);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 50px;
+    right: 350px;
+    
+} */
+
+.quote-box {
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 5px;
+}
+
+.quote-box h1 {
+    font-size: 3.5rem;
+    margin: 20px;
+
+}
+
+.quote {
+    font-size: 1.8rem;
+    color: white;
+    background-color: rgb(73, 73, 185);
+    padding: 10px;
+    margin: 10px;
+}
+
+.quote:hover {
+    color: rgb(132, 168, 30);
+    transition: 2px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .quote-box {
+        width: 80vw;
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .quote-box {
+        width: 60vw;
+        height: 50vh;
+    }
+
+    .quote-box h1 {
+        font-size: 2.8rem;
+    
+    }
+
+    .quote {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quote-box {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .quote-box h1 {
+        font-size: 2rem;
+    
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .quote-box {
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .quote-box h1 {
+        font-size: 1.5rem;
+    
+    }
+
+    .quote {
+        font-size: 1rem;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .quote-box {
+        height: 45vh
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .quote-box {
+        height: 50vh;
+        width: 70vw;
+    }
+
+}

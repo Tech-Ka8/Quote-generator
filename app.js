@@ -14,12 +14,14 @@ function getRandomQuotes () {
 function displayRandomQuote() {
     const randomQuotes = getRandomQuotes();
     const quoteElement = document.querySelector('.h1');
-    quoteElement.innerText = `'${randomQuotes.quote}'-${randomQuotes.author}`;
+    const author = document.querySelector('.h6');
+    quoteElement.innerText = `"${randomQuotes.quote}"`;
+    author.innerText =`'${randomQuotes.author}'`;
 
 }
 
-document.querySelector('.quote').addEventListener('click', displayRandomQuote);
+document.querySelector('.generateBtn').addEventListener('click', displayRandomQuote);
 
-window.onload = displayRandomQuote
+ window.onload = displayRandomQuote
 
 setInterval(displayRandomQuote, 3000);
